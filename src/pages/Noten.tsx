@@ -150,11 +150,6 @@ export default function Noten() {
                 onChange={e => setForm({ ...form, weight: parseFloat(e.target.value) || 1 })}
                 className="w-full px-4 py-2.5 rounded-xl border border-[#E5E7EB] dark:border-[#334155] bg-[#F8F9FB] dark:bg-[#0F172A] text-sm text-[#111827] dark:text-[#F9FAFB]"
               />
-              <p className="text-[10px] text-[#6B7280]">
-                Die Notenart-Gewichtung (z.B. Klausur ×2) wird in den Einstellungen festgelegt. 
-                Diese Einzelgewichtung hier multipliziert sich zusätzlich — z.B. wenn eine bestimmte Klausur doppelt zählt.
-                Standard = 1 (keine Extra-Gewichtung).
-              </p>
             </div>
           </div>
           <Input label="Beschreibung" value={form.description} onChange={e => setForm({ ...form, description: e.target.value })} placeholder="z.B. Analysis Klausur 1" />
