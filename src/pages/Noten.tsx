@@ -137,7 +137,25 @@ export default function Noten() {
           <PointsSlider label="Punkte" value={form.points} onChange={v => setForm({ ...form, points: v })} />
           <div className="grid grid-cols-2 gap-4">
             <Input label="Datum" type="date" value={form.date} onChange={e => setForm({ ...form, date: e.target.value })} />
-            <Input label="Gewichtung" type="number" min={0.5} max={5} step={0.5} value={form.weight} onChange={e => setForm({ ...form, weight: parseFloat(e.target.value) })} />
+            <div className="space-y-1.5">
+              <label className="text-sm font-medium text-[#111827] dark:text-[#F9FAFB]">
+                Einzelgewichtung
+              </label>
+              <input
+                type="number"
+                min={0.5}
+                max={5}
+                step={0.5}
+                value={form.weight}
+                onChange={e => setForm({ ...form, weight: parseFloat(e.target.value) || 1 })}
+                className="w-full px-4 py-2.5 rounded-xl border border-[#E5E7EB] dark:border-[#334155] bg-[#F8F9FB] dark:bg-[#0F172A] text-sm text-[#111827] dark:text-[#F9FAFB]"
+              />
+              <p className="text-[10px] text-[#6B7280]">
+                Die Notenart-Gewichtung (z.B. Klausur ×2) wird in den Einstellungen festgelegt. 
+                Diese Einzelgewichtung hier multipliziert sich zusätzlich — z.B. wenn eine bestimmte Klausur doppelt zählt.
+                Standard = 1 (keine Extra-Gewichtung).
+              </p>
+            </div>
           </div>
           <Input label="Beschreibung" value={form.description} onChange={e => setForm({ ...form, description: e.target.value })} placeholder="z.B. Analysis Klausur 1" />
           <div className="flex gap-3 pt-4">

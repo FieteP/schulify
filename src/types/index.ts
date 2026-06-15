@@ -37,6 +37,7 @@ export interface CalendarEvent {
 export interface Document {
   id: string; name: string; subjectId?: string; semester?: Semester
   category: string; content: string; createdAt: string; updatedAt: string; tags: string[]
+  filePath?: string; fileName?: string; fileSize?: number; fileType?: string
 }
 
 export interface Goal {
