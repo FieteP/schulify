@@ -74,8 +74,65 @@ export function getPointsColor(p: number): string {
 }
 
 export const SUBJECT_COLORS = [
-  '#3B82F6','#EF4444','#10B981','#F59E0B','#8B5CF6',
-  '#EC4899','#06B6D4','#84CC16','#F97316','#6366F1',
-  '#14B8A6','#E11D48','#0EA5E9','#A855F7','#22C55E',
-  '#D946EF','#0891B2','#65A30D','#EA580C','#7C3AED'
+  // Blau
+  '#3B82F6',
+  '#2563EB',
+  '#1D4ED8',
+
+  // Hellblau
+  '#38BDF8',
+  '#7DD3FC',
+  '#06B6D4',
+
+  // Rot
+  '#EF4444',
+  '#DC2626',
+  '#B91C1C',
+
+  // Orange / Rot
+  '#F97316',
+  '#EA580C',
+  '#FB7185',
+
+  // Orange
+  '#FB923C',
+  '#F59E0B',
+
+  // Gelb
+  '#FACC15',
+  '#EAB308',
+
+  // Grün
+  '#22C55E',
+
+  // Hellgrün
+  '#84CC16',
+  '#A3E635',
+
+  // Pink
+  '#EC4899',
+  '#F472B6',
+
+  // Lila
+  '#8B5CF6',
+  '#A855F7',
+  '#7C3AED',
+
+  // Dunkelgrau
+  '#374151',
+
+  // Grau
+  '#6B7280',
+
+  // Hellgrau
+  '#9CA3AF',
+
+  // Weiteres Grau
+  '#4B5563',
+
+  // Türkis
+  '#14B8A6',
+
+  // Schwarz
+  '#111827'
 ]
