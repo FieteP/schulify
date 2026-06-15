@@ -3,7 +3,7 @@ import { supabase } from '../lib/supabase'
 import { Settings, Semester, GradeType } from '../types'
 
 const DEFAULT: Settings = {
-  theme: 'light',
+  theme: 'dark',
   currentSemester: '11.1',
   schoolName: '',
   userName: '',
